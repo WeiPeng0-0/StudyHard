@@ -7,9 +7,10 @@ package com.ultimavip.testsomething.utils;
 public class MathUtils {
     public static int sum(int a1,int a2){
        int  result=a1+a2;
-        result++;
         ++result;
         result++;
+        result++;
+        ++result;
         return result;
     }
 }
