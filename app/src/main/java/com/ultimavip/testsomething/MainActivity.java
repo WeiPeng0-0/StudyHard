@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.ultimavip.testsomething.utils.MathUtils;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText et1;
@@ -24,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view) {
-                tv.setText(Integer.parseInt(et1.getText().toString())+ Integer.parseInt(et2.getText().toString()));
+                tv.setText(MathUtils.sum(Integer.parseInt(et1.getText().toString()), Integer.parseInt(et2.getText().toString()))
+                        + "");
             }
         });
     }
