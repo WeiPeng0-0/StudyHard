@@ -15,6 +15,7 @@ public class MathUtils {
         Log.e("MathUtils",""+result);
         ++result;
         result++;
+        result++;
         ++result;
         return result;
     }
