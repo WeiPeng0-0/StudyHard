@@ -2,6 +2,7 @@ package com.ultimavip.testsomething;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View view) {
                 tv.setText(MathUtils.sum(Integer.parseInt(et1.getText().toString()), Integer.parseInt(et2.getText().toString()))
                         + "");
+                Log.e("Main","I'm your fans");
             }
         });
     }

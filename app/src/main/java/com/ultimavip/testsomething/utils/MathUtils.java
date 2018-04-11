@@ -11,12 +11,12 @@ public class MathUtils {
        int  result=a1+a2;
         result++;
         result++;
-        result++;
         Log.e("MathUtils",""+result);
-        ++result;
-        result++;
         result++;
         ++result;
+        result++;
+        ++result;
+        result++;
         return result;
     }
 }
