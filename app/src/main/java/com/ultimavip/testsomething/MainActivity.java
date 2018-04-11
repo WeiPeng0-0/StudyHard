@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.haha.logutils.LogUtils;
 import com.ultimavip.testsomething.utils.MathUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 tv.setText(MathUtils.sum(Integer.parseInt(et1.getText().toString()), Integer.parseInt(et2.getText().toString()))
                         + "");
                 Log.e("Main","I'm your fans");
+                LogUtils.showLog("ahaa");
             }
         });
+
     }
 }
