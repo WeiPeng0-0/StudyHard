@@ -9,14 +9,14 @@ import android.util.Log;
 public class MathUtils {
     public static int sum(int a1,int a2){
        int  result=a1+a2;
-        result++;
-        result++;
-        result++;
         Log.e("MathUtils",""+result);
+        result++;
+        result++;
         ++result;
         result++;
         result++;
         ++result;
+        result++;
         return result;
     }
 }
