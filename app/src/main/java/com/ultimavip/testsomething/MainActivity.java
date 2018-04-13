@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Button bt = findViewById(R.id.button);
         et1 = findViewById(R.id.editText);
         et2 = findViewById(R.id.editText2);
+
+        //测试
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view) {
