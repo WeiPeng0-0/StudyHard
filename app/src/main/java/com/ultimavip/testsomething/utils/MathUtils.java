@@ -18,7 +18,7 @@ public class MathUtils {
         result++;
         ++result;
 
-        
+
         return result;
     }
 }
