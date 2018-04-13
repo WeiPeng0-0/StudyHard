@@ -25,9 +25,6 @@ public class MathUtils {
         result++;
         ++result;
 
-
-        
-
         result++;
         return result;
     }
