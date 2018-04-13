@@ -2,6 +2,7 @@ package com.ultimavip.testsomething;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,14 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Button bt = findViewById(R.id.button);
         et1 = findViewById(R.id.editText);
         et2 = findViewById(R.id.editText2);
-
-        //测试
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view) {
-                tv.setText(MathUtils.sum(Integer.parseInt(et1.getText().toString()), Integer.parseInt(et2.getText().toString()))
-                        + "");
-                LogUtils.showLog("ahaa");
 //                tv.setText((MathUtils.sum(Integer.parseInt(et1.getText().toString()), Integer.parseInt(et2.getText().toString()))
 //                )+haha);
 //                Log.e("Main","I'm your fans");
