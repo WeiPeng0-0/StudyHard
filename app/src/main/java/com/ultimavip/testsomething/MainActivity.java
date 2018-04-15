@@ -2,12 +2,19 @@ package com.ultimavip.testsomething;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.ultimavip.testsomething.testdragger.DaggerMainActivityComponent;
+import com.ultimavip.testsomething.testdragger.MainResultBean;
 import com.ultimavip.testsomething.testrxjava.ITestRxJava;
+
+import javax.inject.Inject;
+
+import retrofit2.Retrofit;
 
 
 public class MainActivity extends AppCompatActivity implements ITestRxJava {
@@ -52,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements ITestRxJava {
                 textObservable();
 
                 textRxjavaRetrofit();
+                textDragger();
             }
         });
 
@@ -201,7 +209,17 @@ public class MainActivity extends AppCompatActivity implements ITestRxJava {
 //        });
     }
 
+    @Inject
+    MainResultBean mainResultBean;
+    @Inject
+    Retrofit mRetrofit;
+
+
     @Override
     public void textDragger () {
+//        DaggerMainActivityComponent.create().inject(this);
+        DaggerMainActivityComponent.create().inject(this);
+        Log.e("haha",mainResultBean==null?"null":mainResultBean.toString()+"--");
+        Log.e("hahamRetrofit",mRetrofit==null?"null":mRetrofit.toString()+"--");
     }
 }

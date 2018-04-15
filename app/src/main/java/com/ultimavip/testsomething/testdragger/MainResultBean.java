@@ -7,14 +7,14 @@ import javax.inject.Inject;
  * 数据接收
  */
 
-public class DraggerResultBean {
+public class MainResultBean {
     String msg;
     String code;
     boolean success;
     String data;
 
     @Inject
-    public DraggerResultBean () {
+    public MainResultBean () {
 
     }
 
