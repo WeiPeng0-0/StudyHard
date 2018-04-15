@@ -5,4 +5,8 @@ package com.ultimavip.testsomething.testrxjava;
  */
 
 public interface ITestRxJava {
+
+   void textObservable();
+   void textRxjavaRetrofit();
+   void textDragger();
 }

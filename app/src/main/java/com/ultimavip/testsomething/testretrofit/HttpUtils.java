@@ -3,6 +3,7 @@ package com.ultimavip.testsomething.testretrofit;
 import com.alibaba.fastjson.support.retrofit.Retrofit2ConverterFactory;
 
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 /**
  * Created by zhuxing on 2018/4/12.
@@ -17,7 +18,9 @@ public class HttpUtils {
                 if (mRetrofit == null)
                     mRetrofit = new Retrofit.Builder()
                             .baseUrl("https://gw.shenzhuzhuli.com/")
-                            .addConverterFactory(new Retrofit2ConverterFactory()).build();
+                            .addConverterFactory(new Retrofit2ConverterFactory())
+                            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                            .build();
             }
         }
         return mRetrofit;

@@ -5,4 +5,7 @@ package com.haha.logutils;
  */
 
 public class JavaScriptTest {
+    public static void main(){
+
+    }
 }

@@ -1,15 +1,22 @@
-package com.ultimavip.testsomething.testretrofit;
+package com.ultimavip.testsomething.testdragger;
+
+import javax.inject.Inject;
 
 /**
  * Created by zhuxing on 2018/4/12.
  * 数据接收
  */
 
-public class ResultBean {
+public class DraggerResultBean {
     String msg;
     String code;
     boolean success;
     String data;
+
+    @Inject
+    public DraggerResultBean () {
+
+    }
 
     public String getMsg () {
         return msg;
@@ -52,4 +59,6 @@ public class ResultBean {
                 ", data='" + data + '\'' +
                 '}';
     }
+
+
 }

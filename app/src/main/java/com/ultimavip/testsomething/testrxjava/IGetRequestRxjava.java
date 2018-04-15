@@ -1,6 +1,8 @@
-package com.ultimavip.testsomething.testretrofit;
+package com.ultimavip.testsomething.testrxjava;
 
-import retrofit2.Call;
+import com.ultimavip.testsomething.testretrofit.ResultBean;
+
+import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
@@ -9,10 +11,11 @@ import retrofit2.http.POST;
  * Created by zhuxing on 2018/4/12.
  */
 
-public interface IGetRequest {
+public interface IGetRequestRxjava {
     @FormUrlEncoded
 @POST("system/v1.0/appVersion/getAppVersion")
-    Call<ResultBean> getCall(@Field("nonce")String nonce,@Field("sign")String sign,@Field("appVersion")String appVersion,@Field("osType")String osType);
+    Observable<ResultBean> getCall (@Field("nonce") String nonce, @Field("sign") String sign, @Field("appVersion") String appVersion, @Field("osType")
+            String osType);
     // @GET注解的作用:采用Get方法发送网络请求
 
     // getCall() = 接收网络请求数据的方法
