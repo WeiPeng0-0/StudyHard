@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.ultimavip.testsomething.testretrofit.HttpUtils;
 import com.ultimavip.testsomething.testretrofit.IGetRequest;
 import com.ultimavip.testsomething.testretrofit.ResultBean;
-import com.ultimavip.testsomething.utils.MathUtils;
 
 import retrofit2.Call;
 import retrofit2.Callback;
