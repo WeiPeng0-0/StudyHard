@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity implements ITestRxJava {
 
     String hahas;
 
-    
+
+    String lalala;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
