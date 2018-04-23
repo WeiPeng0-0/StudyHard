@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements ITestRxJava {
     private EditText et2;
     String haha = "";
 
+
+    
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
